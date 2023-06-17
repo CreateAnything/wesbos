@@ -22,11 +22,11 @@ window.addEventListener('load', () => {
     }
     //开始几时
     function start() {
-        setInterval(() => {
+        timer = setInterval(() => {
             const date = new Date()
             seconds.style.transform = `rotate(${date.getSeconds() * SECONDS_RNGLE}deg)`
             minutes.style.transform = `rotate(${date.getMinutes() * MINUTES_RNGLE}deg)`
-            hours.style.transform = `rotate(${date.getHours() * HOURS_RNGLE}deg)`             
+            hours.style.transform = `rotate(${date.getHours() * MINUTES_RNGLE}deg)`
         },1000)
     }
     function init() {
